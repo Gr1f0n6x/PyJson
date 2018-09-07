@@ -2,8 +2,6 @@
 Simple library for converting user defined classes to and from json 
 ## Usage
 
-.. code:: python
-
     from pyjson import JsonMapper
     
     class SomeClass(object, metaclass=JsonMapper):
@@ -19,8 +17,8 @@ Simple library for converting user defined classes to and from json
         def deserialize(cls, o):
             return SomeClass(**o)
       
-     
-.. code:: python
+
+...     
     
     from pyjson import to_json, from_json
     from . import SomeClass
